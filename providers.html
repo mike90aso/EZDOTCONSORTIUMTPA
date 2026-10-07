@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Providers Needed | EZ DOT Consortium TPA</title>
+  <meta name="description" content="EZ DOT Consortium TPA is expanding its national network and is seeking DOT Physical examiners and random drug and alcohol testing providers.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="mast">
+    <div class="wrap nav">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">EZ</span>
+        <span class="logo-name">EZ DOT Consortium<span>Third-party administrator</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <ul class="nav-links" id="site-nav">
+        <li><a href="index.html#testing">Testing</a></li>
+        <li><a href="index.html#physicals">Physicals</a></li>
+        <li><a href="index.html#return-to-duty">Return to duty</a></li>
+        <li><a href="index.html#program">Program</a></li>
+        <li><a href="providers.html">Providers needed</a></li>
+        <li><a href="reminders.html">Driver Reminders</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">National network</p>
+          <h1>Providers needed</h1>
+          <p class="deck">EZ DOT Consortium TPA is adding DOT Physical examiners and drug and alcohol collection sites as the program expands across the United States.</p>
+          <div class="actions">
+            <a class="btn" href="#apply">Apply to join</a>
+          </div>
+        </div>
+        <ul class="scope">
+          <li><strong>DOT Physical providers</strong><span>FMCSA National Registry medical examiners who can see referred drivers.</span></li>
+          <li><strong>Drug and alcohol providers</strong><span>Collection sites that can perform DOT random drug tests and alcohol tests.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Who we are adding</h2>
+          <p>Both roles support carriers, owner-operators, and trucking schools already in the consortium.</p>
+        </div>
+        <div class="grid-2">
+          <article class="card">
+            <h3>DOT Physical providers</h3>
+            <p>Certified medical examiners listed on the FMCSA National Registry. Exams are for drivers referred by the consortium. You set the appointment; we send the driver.</p>
+          </article>
+          <article class="card">
+            <h3>Random drug and alcohol testing providers</h3>
+            <p>Sites that can collect a DOT urine drug test and conduct a breath alcohol test when a driver is selected from the random pool. Random tests are unannounced, so the site needs to take a driver on short notice during business hours.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>What we ask of a site</h2>
+          <p>A clinic may apply for one role or both.</p>
+        </div>
+        <div class="grid-2">
+          <article class="card">
+            <h3>For Physical exams</h3>
+            <p>Current National Registry certification, a published clinic address, and the ability to schedule a DOT medical exam for a referred driver.</p>
+          </article>
+          <article class="card">
+            <h3>For random testing</h3>
+            <p>Qualified DOT collectors, evidential breath alcohol testing, and a process for specimens that meets 49 CFR Part 40. The site should be able to accept a randomly selected driver without a long booking window.</p>
+          </article>
+          <article class="card">
+            <h3>Coverage</h3>
+            <p>We are filling gaps in the national network. Tell us the city and state, and whether you can cover nearby areas.</p>
+          </article>
+          <article class="card">
+            <h3>How referrals work</h3>
+            <p>Drivers are sent to a provider near them. You remain the clinic of record for the exam or the collection. We coordinate the referral.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="apply">
+      <div class="wrap contact-grid">
+        <div>
+          <p class="eyebrow">Apply</p>
+          <h2>Tell us about your clinic</h2>
+          <p class="deck">Include your city, which service you can provide, and your National Registry or collection credentials.</p>
+          <p class="mail"><a href="mailto:info@EZphysicals.com">info@EZphysicals.com</a></p>
+        </div>
+        <form name="provider-application" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="provider-application">
+          <p hidden><label>Do not fill this out: <input name="bot-field"></label></p>
+          <label>Name <input name="name" type="text" required autocomplete="name"></label>
+          <label>Clinic or company <input name="company" type="text" required autocomplete="organization"></label>
+          <label>City and state <input name="location" type="text" required placeholder="City, ST"></label>
+          <label>We can provide
+            <select name="provider" required>
+              <option value="">Select</option>
+              <option>DOT Physical exams</option>
+              <option>Random drug and alcohol testing</option>
+              <option>Both</option>
+            </select>
+          </label>
+          <label>Email <input name="email" type="email" required autocomplete="email"></label>
+          <label>Phone <input name="phone" type="tel" required autocomplete="tel"></label>
+          <label>Credentials and availability <textarea name="message" required placeholder="National Registry number, collection qualifications, hours, and how soon you can take a referred driver."></textarea></label>
+          <button class="btn btn-navy" type="submit">Submit application</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div>
+        <strong>EZ DOT Consortium TPA</strong>
+        Consortium and third-party administrator. United States.
+      </div>
+      <a href="mailto:info@EZphysicals.com">info@EZphysicals.com</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

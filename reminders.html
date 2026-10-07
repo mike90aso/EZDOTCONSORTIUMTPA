@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Driver Reminders | EZ DOT Consortium TPA</title>
+  <meta name="description" content="Opt in to text and email reminders from EZ DOT Consortium TPA for DOT Physical expiration, discounted DOT Physicals, and other cost-saving services.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="mast">
+    <div class="wrap nav">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">EZ</span>
+        <span class="logo-name">EZ DOT Consortium<span>Third-party administrator</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <ul class="nav-links" id="site-nav">
+        <li><a href="index.html#testing">Testing</a></li>
+        <li><a href="index.html#physicals">Physicals</a></li>
+        <li><a href="index.html#return-to-duty">Return to duty</a></li>
+        <li><a href="index.html#program">Program</a></li>
+        <li><a href="providers.html">Providers needed</a></li>
+        <li><a href="reminders.html">Driver Reminders</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Driver Reminders</p>
+          <h1>Text and email reminders</h1>
+          <p class="deck">Opt in if you want EZ DOT Consortium TPA to contact you about your DOT Physical expiration, discounted DOT Physicals, and other cost-saving services.</p>
+          <div class="actions">
+            <a class="btn" href="#opt-in">Opt in</a>
+          </div>
+        </div>
+        <ul class="scope">
+          <li><strong>DOT Physical expiration</strong><span>A reminder before the date on your medical certificate.</span></li>
+          <li><strong>Discounted DOT Physicals</strong><span>Offers for a lower-priced exam when one is available.</span></li>
+          <li><strong>Other cost-saving services</strong><span>Messages about related services and advertisements.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>What the messages cover</h2>
+          <p>Texts and emails go only to drivers who submit this form and check the consent box.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card">
+            <h3>DOT Physical expiration</h3>
+            <p>We use the expiration date you give us, or the date already on file, and send a reminder before that certificate runs out.</p>
+          </article>
+          <article class="card">
+            <h3>Discounted DOT Physicals</h3>
+            <p>When a reduced exam price is available, we can send that offer by text and email.</p>
+          </article>
+          <article class="card">
+            <h3>Other services and advertisements</h3>
+            <p>Occasional messages about other cost-saving services. These are advertisements, not required safety notices.</p>
+          </article>
+        </div>
+        <p class="note">Random drug and alcohol tests are not included. A random selection is unannounced. This list will not text or email you that a random test is coming up.</p>
+      </div>
+    </section>
+
+    <section class="section alt" id="opt-in">
+      <div class="wrap contact-grid">
+        <div>
+          <p class="eyebrow">Opt in</p>
+          <h2>Name, email, and mobile number</h2>
+          <p class="deck">Use the phone that can receive text messages. You can opt out later by replying STOP to a text or asking us by email.</p>
+          <p class="mail"><a href="mailto:info@EZphysicals.com">info@EZphysicals.com</a></p>
+        </div>
+        <form name="driver-reminders" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="driver-reminders">
+          <p hidden><label>Do not fill this out: <input name="bot-field"></label></p>
+          <label>Name <input name="name" type="text" required autocomplete="name"></label>
+          <label>Email <input name="email" type="email" required autocomplete="email"></label>
+          <label>Mobile phone <input name="phone" type="tel" required autocomplete="tel"></label>
+          <label>DOT Physical expiration <input name="expiration" type="date"></label>
+          <label class="consent">
+            <input name="consent" type="checkbox" value="Yes" required>
+            <span>I agree to receive text messages and emails from EZ DOT Consortium TPA about my DOT Physical expiration, discounted DOT Physicals, and other cost-saving services and advertisements. Message and data rates may apply. Consent is not a condition of any purchase. I can opt out at any time.</span>
+          </label>
+          <button class="btn btn-navy" type="submit">Submit opt-in</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div>
+        <strong>EZ DOT Consortium TPA</strong>
+        Consortium and third-party administrator. United States.
+      </div>
+      <a href="mailto:info@EZphysicals.com">info@EZphysicals.com</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
